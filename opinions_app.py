@@ -3,7 +3,7 @@ from random import randrange
 import csv
 import click
 
-from flask import Flask, abort, flash, redirect, render_template, url_for
+from flask import Flask, abort, redirect, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_wtf import FlaskForm
@@ -102,4 +102,3 @@ def load_opinions_command():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
