@@ -13,7 +13,7 @@ from wtforms.validators import DataRequired, Length, Optional
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
-app.config['SECRET_KEY'] = 'MY SECRET KEY'
+app.config['SECRET_KEY'] = 's3cr3t-k3y-f0r-fl4sk-4pp-2024'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
