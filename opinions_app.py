@@ -2,7 +2,6 @@ from datetime import datetime
 from random import randrange
 import csv
 import click
-
 from flask import Flask, abort, redirect, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -11,7 +10,6 @@ from wtforms import StringField, SubmitField, TextAreaField, URLField
 from wtforms.validators import DataRequired, Length, Optional
 
 app = Flask(__name__)
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 app.config['SECRET_KEY'] = 's3cr3t-k3y-f0r-fl4sk-4pp-2024'
 
